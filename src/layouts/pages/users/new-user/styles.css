@@ -1,0 +1,41 @@
+.ql-editor {
+  border-radius: 0 0 0.5rem 0.5rem;
+  transition: border-color 0.15s ease;
+  transition: box-shadow 0.15s ease;
+}
+.ql-editor:focus {
+  border: #35d1f5;
+  box-shadow: 0rem 0rem 0rem 0.125rem rgb(129 227 249);
+  outline: 0;
+}
+.ql-editor.ql-blank::before {
+  color: #495057;
+  font-style: normal !important ;
+  opacity: 0.6;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.bio-editor {
+  height: 240px;
+}
+@media screen and (max-width: 848px) {
+  .bio-editor {
+    height: 210px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .bio-editor {
+    height: 180px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .bio-editor {
+    margin-bottom: 50px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 452px) {
+  .bio-editor {
+    margin-bottom: 80px;
+    height: 250px;
+  }
+}
